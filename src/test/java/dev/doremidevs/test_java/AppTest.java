@@ -1,4 +1,4 @@
-package dev.mabel.test_java;
+package dev.doremidevs.test_java;
 
 import org.junit.jupiter.api.Test;
 

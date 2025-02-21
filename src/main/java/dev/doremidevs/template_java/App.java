@@ -1,4 +1,4 @@
-package dev.mabel.template_java;
+package dev.doremidevs.template_java;
 public final class App {
     private App() {}
 
