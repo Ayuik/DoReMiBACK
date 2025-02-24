@@ -1,4 +1,4 @@
-package enums;
+package dev.doremidevs.template_java.enums;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
