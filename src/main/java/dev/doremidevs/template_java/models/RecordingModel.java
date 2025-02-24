@@ -6,9 +6,9 @@ public class RecordingModel <T extends InterfaceNote> {
 
     private int id;
     private String recordingName;
-    private ArrayList <T> recording = new ArrayList<>();
+    private ArrayList <String> recording = new ArrayList<>();
 
-    public RecordingModel(int id, String recordingName, ArrayList<T> recording) {
+    public RecordingModel(int id, String recordingName, ArrayList<String> recording) {
         this.id = id;
         this.recordingName = recordingName;
         this.recording = recording;
@@ -30,12 +30,13 @@ public class RecordingModel <T extends InterfaceNote> {
         this.recordingName = recordingName;
     }
 
-    public ArrayList<T> getRecording() {
+    public ArrayList<String> getRecording() {
         return recording;
     }
 
     public void createRecording(T note) {
-        recording.add(note);
+        String url = note.getNoteUrl();
+        recording.add(url);
     }
 
 }
