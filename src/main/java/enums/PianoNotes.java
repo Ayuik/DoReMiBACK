@@ -3,13 +3,13 @@ package enums;
 import models.Note;
 
 public enum PianoNotes implements Note {
-    DO ("do", null),
-    RE("re", null),
-    MI("mi", null),
-    FA("fa", null),
-    SOL("sol", null),
-    LA("la", null),
-    SI("si", null);
+    DO ("pianoDo", null),
+    RE("pianoRe", null),
+    MI("pianoMi", null),
+    FA("pianoFa", null),
+    SOL("pianoSol", null),
+    LA("pianoLa", null),
+    SI("pianoSi", null);
 
     private final String noteName;
     private final String noteUrl;

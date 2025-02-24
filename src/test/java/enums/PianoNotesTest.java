@@ -7,13 +7,13 @@ import org.junit.jupiter.api.Test;
 public class PianoNotesTest {
     @Test
     void testGetNoteName() {
-        assertEquals("do", PianoNotes.DO.getNoteName());
-        assertEquals("re", PianoNotes.RE.getNoteName());
-        assertEquals("mi", PianoNotes.MI.getNoteName());
-        assertEquals("fa", PianoNotes.FA.getNoteName());
-        assertEquals("sol", PianoNotes.SOL.getNoteName());
-        assertEquals("la", PianoNotes.LA.getNoteName());
-        assertEquals("si", PianoNotes.SI.getNoteName());
+        assertEquals("pianoDo", PianoNotes.DO.getNoteName());
+        assertEquals("pianoRe", PianoNotes.RE.getNoteName());
+        assertEquals("pianoMi", PianoNotes.MI.getNoteName());
+        assertEquals("pianoFa", PianoNotes.FA.getNoteName());
+        assertEquals("pianoSol", PianoNotes.SOL.getNoteName());
+        assertEquals("pianoLa", PianoNotes.LA.getNoteName());
+        assertEquals("pianoSi", PianoNotes.SI.getNoteName());
     }
 
     @Test
