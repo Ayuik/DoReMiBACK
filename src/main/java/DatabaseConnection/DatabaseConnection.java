@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 public class DatabaseConnection {
 
-    private static final String URL = "jdbc:h2:./:testdb";
+    private static final String URL = "jdbc:h2:./testdb";
 
     public static Connection getConnection() throws SQLException {
         return DriverManager.getConnection(URL);
