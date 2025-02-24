@@ -1,4 +1,4 @@
-package models;
+package dev.doremidevs.template_java.models;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.hamcrest.CoreMatchers.is;
@@ -8,8 +8,10 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import dev.doremidevs.template_java.models.InstrumentModel;
+
 public class InstrumentTest {
-    enum InstrumentNotes implements Note {
+    enum InstrumentNotes implements InterfaceNote {
         DO("instrumentDo", "https://example.com/c.wav"),
         RE("instrumentRe", null);
 

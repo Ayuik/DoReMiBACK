@@ -1,8 +1,8 @@
-package enums;
+package dev.doremidevs.template_java.enums;
 
-import models.Note;
+import dev.doremidevs.template_java.models.InterfaceNote;
 
-public enum PianoNotes implements Note {
+public enum PianoNotes implements InterfaceNote  {
     DO ("pianoDo", null),
     RE("pianoRe", null),
     MI("pianoMi", null),

@@ -1,4 +1,4 @@
-package dev.doremidevs.template_java;
+package dev.doremidevs.template_java.utils;
 public final class App {
     private App() {}
 
