@@ -26,6 +26,6 @@ public class PianoModelTest {
     @Test
     @DisplayName("Should implement makeSound method with PianoNotes")
     void testMakeSound() {
-        assertEquals("pianoDo", pianoModel.makeSound(PianoNotes.DO));
+        assertEquals("../resources/DO4.mp3", pianoModel.makeSound(PianoNotes.DO4));
     }
 }

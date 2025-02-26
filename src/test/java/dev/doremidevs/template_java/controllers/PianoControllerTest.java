@@ -6,8 +6,6 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-
-import dev.doremidevs.template_java.controllers.InstrumentControllerTest.InstrumentNotes;
 import dev.doremidevs.template_java.enums.PianoNotes;
 import dev.doremidevs.template_java.models.InstrumentModel;
 
@@ -27,14 +25,14 @@ public class PianoControllerTest {
 
     @Test
     void testPlayNote() {
-        String result = pianoController.playNote("pianoDo", PianoNotes.values());
-        assertEquals(result, "pianoDo");
+        String result = pianoController.playNote("do4", PianoNotes.values());
+        assertEquals(result, "../resources/DO4.mp3");
     }
 
     @Test
     void testSelectNote() {
-        PianoNotes result = pianoController.selectNote("pianoDo", PianoNotes.values());
-        assertEquals(result, PianoNotes.DO);
+        PianoNotes result = pianoController.selectNote("do4", PianoNotes.values());
+        assertEquals(result, PianoNotes.DO4);
 
     }
 }
