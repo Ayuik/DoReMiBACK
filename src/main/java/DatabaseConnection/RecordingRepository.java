@@ -1,6 +1,6 @@
 package DatabaseConnection;
 
-import java.io.InputStream;
+import dev.doremidevs.template_java.models.RecordingModel;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -22,12 +22,6 @@ public class RecordingRepository {
              catch (SQLException e) 
              {e.printStackTrace();}
     }
-
-
-
-
-
-
 
     public void saveRecording(String name, List<String> notes) {
         String query = "INSERT INTO Recordings (name, notes) VALUES (?, ?)";
