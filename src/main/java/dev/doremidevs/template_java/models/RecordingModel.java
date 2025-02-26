@@ -6,7 +6,7 @@ public class RecordingModel <T extends InterfaceNote> {
 
     private int id;
     private String recordingName;
-    private ArrayList <String> recording = new ArrayList<>();
+    private ArrayList <String> recording = new ArrayList<>(); 
 
     public RecordingModel(int id, String recordingName, ArrayList<String> recording) {
         this.id = id;
