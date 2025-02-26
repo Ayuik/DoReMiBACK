@@ -54,8 +54,8 @@ public class RecordingRepository {
                     int id = rs.getInt("id");
                     String name = rs.getString("name");
                     String notes = rs.getString("notes");
-                    List<String> notesList = new ArrayList<>(List.of(notes.split(",")));
-                    recordings.add(new RecordingModel(id, name, new ArrayList<>(nooteList)));
+                    List<String> noteList = new ArrayList<>(List.of(notes.split(",")));
+                    recordings.add(new RecordingModel(id, name, new ArrayList<>(noteList)));
             }
         } catch (SQLException e) {
             e.printStackTrace();
