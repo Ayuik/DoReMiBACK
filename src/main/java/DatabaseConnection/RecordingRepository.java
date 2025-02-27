@@ -37,8 +37,8 @@ public class RecordingRepository {
         }
     }
 
-    public List<RecordingModel> getRecordings() {
-        List <RecordingModel> recordings = new ArrayList<>();
+    public ArrayList<RecordingModel> getRecordings() {
+        ArrayList <RecordingModel> recordings = new ArrayList<>();
         String query = "SELECT id, name, notes FROM Recordings";
         try (Connection conn = DatabaseConnection.getConnection();
             PreparedStatement pstmt = conn.prepareStatement(query);
