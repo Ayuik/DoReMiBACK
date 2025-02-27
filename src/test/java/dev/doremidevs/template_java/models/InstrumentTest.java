@@ -8,8 +8,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import dev.doremidevs.template_java.models.InstrumentModel;
-
 public class InstrumentTest {
     enum InstrumentNotes implements InterfaceNote {
         DO("instrumentDo", "https://example.com/c.wav"),
@@ -35,7 +33,7 @@ public class InstrumentTest {
         }
     }
     
-    InstrumentModel instrumentModel = new InstrumentModel<InstrumentNotes>();
+    InstrumentModel<InstrumentNotes> instrumentModel;
 
     @BeforeEach
     void setUp() {
