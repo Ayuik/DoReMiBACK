@@ -122,6 +122,9 @@ nb-configuration.xml
 ##############################
 ## Node.js
 ##############################
+# Ignorar la carpeta node completa
+node/
+
 # Ignorar archivos grandes como node.exe
 node/node.exe
 
