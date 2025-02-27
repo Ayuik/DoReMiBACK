@@ -117,3 +117,39 @@ nb-configuration.xml
 *.zip
 *.tar.gz
 *.rar
+
+
+##############################
+## Node.js
+##############################
+# Ignorar la carpeta node_modules
+node_modules/
+
+# Ignorar archivos binarios grandes
+*.exe
+*.dll
+*.bin
+
+# Ignorar logs generados por npm o yarn
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+pnpm-debug.log
+
+# Ignorar cachés de herramientas
+.cache/
+.temp/
+
+# Ignorar archivos de entorno
+.env
+.env.local
+.env.*.local
+
+# Ignorar archivos generados por herramientas de construcción
+dist/
+build/
+out/
+
+# Ignorar archivos temporales
+*.tmp
+*.swp
