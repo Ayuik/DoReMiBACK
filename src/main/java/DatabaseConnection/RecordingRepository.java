@@ -1,5 +1,5 @@
 package DatabaseConnection;
-
+import dev.doremidevs.template_java.enums.PianoNotes;
 import dev.doremidevs.template_java.models.RecordingModel;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -39,8 +39,13 @@ public class RecordingRepository {
         }
     }
 
-    public ArrayList<RecordingModel> getRecordings() {
-        ArrayList<RecordingModel> recordingModelList = new ArrayList<>();
+
+
+
+
+
+     public ArrayList<RecordingModel<?>> getRecordings() {
+        ArrayList<RecordingModel <?>> recordingModelList = new ArrayList<>();
         String query = "SELECT id, name, notes FROM Recordings";
         try (Connection conn = DatabaseConnection.getConnection();
                 PreparedStatement pstmt = conn.prepareStatement(query);
@@ -57,7 +62,7 @@ public class RecordingRepository {
             e.printStackTrace();
         }
         return recordingModelList;
-    }
+    } 
 
     public void deleteRecording(String recordingName) {
         String query = "DELETE FROM recordings WHERE recordingName = ?";
@@ -70,15 +75,18 @@ public class RecordingRepository {
         }
     }
 
-    public RecordingModel getRecordingByName(String recordingName) {
+   
+   /* public RecordingModel getRecordingByName(String recordingName) {
         String query = "SELECT * FROM recordings WHERE recordingName = ?";
         try (Connection conn = DatabaseConnection.getConnection();
                 PreparedStatement pstmt = conn.prepareStatement(query)) {
             pstmt.setString(1, recordingName);
             ResultSet rs = pstmt.executeQuery();
             if (rs.next()) {
-                RecordingModel recordingModel = new RecordingModel();
-                recordingModel.setRecordingName(rs.getString("recordingName"));
+                RecordingModel recordingModel = new RecordingModel(0, query, null);
+                String notes = rs.getString("notes");
+                ArrayList<String> recording = new ArrayList<>(List.of(notes.split(",")));
+               // recordingModel.setRecordingName(rs.getString("name"));
                 recordingModel.createRecording(rs.getArray("notes"));
                 return recordingModel;
             }
@@ -86,5 +94,5 @@ public class RecordingRepository {
             e.printStackTrace();
         }
         return null;
-    }
+    }  */
 }

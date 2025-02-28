@@ -1,5 +1,4 @@
 package dev.doremidevs.template_java.controllers;
-
 import dev.doremidevs.template_java.models.RecordingModel;
 import java.util.ArrayList;
 
@@ -9,19 +8,18 @@ public class RecordingController {
 
     private RecordingRepository recordingRepository = new RecordingRepository();
 
-    public ArrayList<RecordingModel> index() {
+    public ArrayList<RecordingModel<?>> index() {
         return recordingRepository.getRecordings();
 
     }
 
     public void create(RecordingModel recordingModel) {
-        RecordingModel recording = new RecordingModel(recordingName, recording);
-        recordingRepository.saveRecording(recording);
+        recordingRepository.saveRecording(recordingModel.getId(), recordingModel.getRecordingName(), recordingModel.getRecording());
     }
 
-    public RecordingModel show(String recordingName) {
+    /* public RecordingModel show(String recordingName) {
         return recordingRepository.getRecordingByName(recordingName);
-    }
+    } */
 
     public void destroy(String recordingName) {
         recordingRepository.deleteRecording(recordingName);
