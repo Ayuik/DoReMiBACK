@@ -48,12 +48,12 @@ public class RecordingServlet extends HttpServlet {
                 json.append("\"").append(noteUrl).append("\",");
             }
             if (!recording.getRecording().isEmpty()) {
-                json.deleteCharAt(json.length() - 1); // Eliminar la última coma
+                json.deleteCharAt(json.length() - 1);
             }
             json.append("]},");
         }
         if (!recordings.isEmpty()) {
-            json.deleteCharAt(json.length() - 1); // Eliminar la última coma
+            json.deleteCharAt(json.length() - 1);
         }
         json.append("]");
         return json.toString();
