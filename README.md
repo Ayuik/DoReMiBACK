@@ -1,26 +1,8 @@
-# Project Title
-
-## Table of Contents
-
-- Description
-- Features
-- Getting Started
-  - Prerequisites
-  - Installation
-- Tests
-- Build
-- Usage
-- Feedback and Contributions
-- Contact
+# DoReMi-Devs
 
 ## Description
 
-A more detailed explanation of what your project does.  What problem does it solve? What are its key features?  Be specific and avoid jargon if possible.  Include a sentence or two summarizing the project for quick understanding.
-
-## Features
-
-- A list with all the features from your project.
-- **Feature Name**: What this feature do.
+The backend for this project is designed to manage the logic and data flow for an interactive web application where users can play and record using a virtual piano.
 
 ## Getting Started
 
@@ -35,7 +17,7 @@ A more detailed explanation of what your project does.  What problem does it sol
 
 1. Clone the repository:
 ```Bash
-git clone [https://github.com/your-username/your-repo.git](https://github.com/your-username/your-repo.git)
+git clone [https://github.com/your-username/your-repo.git](https://github.com/your-username/your-repo.git](https://github.com/Ayuik/DoReMiBACK.git))
 ```
 2. Change to your project directory:
 ```bash
@@ -46,47 +28,14 @@ cd your-repo
 mvn clean install
 ```
 
-## Tests
+###Technologies
+***Programming Language***: Java
 
-Describe how to run the project's tests.  Specify the testing framework used (e.g., JUnit, TestNG) and provide commands for running the tests.
+***Frameworks***: None (no frameworks such as Spring Boot will be used)
 
-**Example (using Maven and JUnit):**
+**Persistence Options**:
 
-```Bash
-mvn test
-```
-## Build
+***JSON Files***: For lightweight and flexible data storage.
 
-Explain how to build the project.  Specify the build tool used (e.g., Maven, Gradle) and provide the necessary commands.
+***H2 Database***: An in-memory database for structured data management.
 
-**Example (using Maven):**
-
-```Bash
-mvn clean package
-```
-
-## Usage
-
-Provide examples of how to use your project.  Include code snippets, screenshots, or GIFs if helpful.  Explain the different options and parameters available.
-
-**Example (Java code snippet):**
-
-```Java
-
-// Example usage of the main function
-MyClass myObject = new MyClass();
-myObject.doSomething("important argument");
-int result = myObject.calculateValue(10, 20);
-System.out.println("Result: " + result);
-```
-## Feedback and Contributions:
-
-Feedback is welcome! Feel free to open issues or submit pull requests to suggest improvements or report any bugs.
-
-## Contact:
-
-I'm **Mabel Rincon** you can contact me via  [![Linkedin](https://i.sstatic.net/gVE0j.png) LinkedIn](https://www.linkedin.com/in/mabel-rincon/)
-&nbsp;
-Check out other repositories at
-&nbsp;
-[![GitHub](https://i.sstatic.net/tskMh.png) GitHub](https://github.com/MabelRincon)
