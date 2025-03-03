@@ -28,15 +28,15 @@ cd your-repo
 mvn clean install
 ```
 
-###Technologies
+### Technologies
 
-***Programming Language***: Java
+**Programming Language**: Java
 
-***Frameworks***: None (no frameworks such as Spring Boot will be used)
+**Frameworks**: None (no frameworks such as Spring Boot will be used)
 
 **Persistence Options**:
 
-***JSON Files***: For lightweight and flexible data storage.
+**JSON Files**: For lightweight and flexible data storage.
 
-***H2 Database***: An in-memory database for structured data management.
+**H2 Database**: An in-memory database for structured data management.
 
