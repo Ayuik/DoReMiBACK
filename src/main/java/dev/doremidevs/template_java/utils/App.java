@@ -15,7 +15,6 @@ public class App {
         handler.setContextPath("/");
         server.setHandler(handler);
 
-        // Crear una instancia del ServletHolder
         ServletHolder servletHolder = new ServletHolder();
         servletHolder.setServlet((Servlet) new RecordingServlet());
         handler.addServlet(servletHolder, "/mi-servlet");

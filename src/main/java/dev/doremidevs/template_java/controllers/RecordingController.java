@@ -1,28 +1,30 @@
 package dev.doremidevs.template_java.controllers;
-import dev.doremidevs.template_java.models.RecordingModel;
-import java.util.ArrayList;
 
+import dev.doremidevs.template_java.models.RecordingModel;
 import DatabaseConnection.RecordingRepository;
+import java.util.List;
 
 public class RecordingController {
 
-    private RecordingRepository recordingRepository = new RecordingRepository();
+    private final RecordingRepository recordingRepository;
 
-    public ArrayList<RecordingModel<?>> index() {
+    public RecordingController(RecordingRepository recordingRepository) {
+        this.recordingRepository = recordingRepository;
+    }
+
+    public List<RecordingModel<?>> index() {
         return recordingRepository.getRecordings();
-
     }
 
-    public void create(RecordingModel recordingModel) {
-        recordingRepository.saveRecording(recordingModel.getId(), recordingModel.getRecordingName(), recordingModel.getRecording());
+    public void create(RecordingModel<?> recordingModel) {
+        recordingRepository.saveRecording(
+            recordingModel.getId(),
+            recordingModel.getRecordingName(),
+            recordingModel.getRecording()
+        );
     }
-
-    /* public RecordingModel show(String recordingName) {
-        return recordingRepository.getRecordingByName(recordingName);
-    } */
 
     public void destroy(String recordingName) {
         recordingRepository.deleteRecording(recordingName);
     }
-
 }
